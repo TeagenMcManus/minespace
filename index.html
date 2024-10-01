@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <!--First Opening Sequence-->
+        <div class="game" id="game">
+
+            <div class="os_txt">
+                <div class="os" id="os">
+                    <h1 class="ost" id="text_header">⛏️ MineSpace ⛏️</h1>
+                    <button class="osb" id="osb">Start Mining</button>
+                </div>
+
+                <!--Player Stats-->
+                <div class="stats" id="stats">
+                    <div class="pxp">
+                        <p class="stat">XP: <strong><span id="xpText">0</span></strong></p>
+                    </div>
+                    <div class="cPick">
+                        <p class="stat">Current Pickaxe: <strong><span id="cPick">Rusty Pickaxe</span></strong></p>
+                    </div>
+                    <div class="pgold">
+                        <p class="stat">Gold: <strong><span id="goldText">0</span></strong></p>
+                    </div>
+                </div>
+
+                <!--Button Functions-->
+                <div class="control" id="controls">
+                    <button class="b button1" id="button1">Go to BlackSmith</button>
+                    <button class="b button2" id="button2">Go to Mine</button>
+                    <button class="b button3" id="button3">Open Inventory</button>
+                </div>
+
+                <!--Game Text, Keep below all-->
+                <div class="txtb" id="txtb">
+                    <div id="text">.
+                    </div>
+                </div>
+            </div>
+
+            <!--XP Tokens-->
+            <div class="upbs" id="upbs">
+                <button class="upb" id="up1">
+                    Quicker Mining (Current LVL: <span id="lvl1">1</span>/6)
+                    <br>XP: <span id="lvl1XP">200</span>
+                </button>
+                <button class="upb" id="up2">
+                    Double XP Proc Chance (Current LVL: <span id="lvl2">1</span>/4)
+                    <br>XP: <span id="lvl2XP">200</span>
+                </button>
+                <button class="upb" id="up3">
+                    Extra Gold (Current LVL: <span id="lvl3">1</span>/4)
+                    <br>XP: <span id="lvl3XP">200</span>
+                </button>
+            </div>
+
+            <!--Player Ore Storage-->
+            <div class="stats" id="mining">
+                <div class="pstone" id="pstone">
+                    <p class="stat">Stone: <strong><span id="stText">0</span></strong></p>
+                </div>
+                <div class="pcopper" id="pcopper">
+                    <p class="stat">Copper: <strong><span id="coText">0</span></strong></p>
+                </div>
+                <div class="piron" id="piron">
+                    <p class="stat">Iron: <strong><span id="irText">0</span></strong></p>
+                </div>
+                <div class="pbronze" id="pbronze">
+                    <p class="stat"> Bronze: <strong><span id="brText">0</span></strong></p>
+                </div>
+            </div>
+
+            <!--BS-->
+            <div class="BlackSmith" id="BS">
+
+                <!--Pickaxe, Goggle Upgrades-->
+                <div class="upFlexb" id="upP">
+                    <button class="bsB" id="pUp">
+                        <p id="allPl">Upgrade Pickaxe (Current LVL: <span id="pLvl">1</span>/4)
+                            <br>Price: $<span id="priceP">50</span>, XP: <span id="reqXPp">0</span>
+                            <br>Copper: <span id="reqCP">15</span>, Iron: <span id="reqIP">0</span>, Bronze: <span id="reqBP">0</span>
+                        </p>
+                    </button>
+                </div>
+                <div class="upFlexb" id="upG">
+                    <button class="bsB" id="gUp">
+                        Upgrade Goggles (Current LVL: <span id="gLvl">0</span>/6)
+                        <br>Price: $<span id="priceG">50</span>, , XP: <span id="reqXPg">0</span>
+                        <br>Copper: <span id="reqCG">0</span>, Iron: <span id="reqIG">0</span>, Bronze: <span id="reqBg">0</span>
+                    </button>
+                </div>
+
+                <!--Selling ores-->
+                <div class="upFlexb" id="MakerBronz">
+                    <button class="bsB broB" id="bronzeM">Make Bronze <br>Copper: <span id="reqC">10</span>, Iron: <span id="reqI">3</span></button>
+                </div>
+                <div class="upFlexb" id="sold1">
+                    <button class="bsB sell" id="sell1">Sell Stone, Price: <span id="stP">$1</span></button>
+                </div>
+                <div class="upFlexb" id="sold2">
+                    <button class="bsB sell" id="sell2">Sell Copper, Price: <span id="coP">$5</span></button>
+                </div>
+                <div class="upFlexb" id="sold3">
+                    <button class="bsB sell" id="sell3">Sell Iron, Price: <span id="irP">$10</span></button>
+                </div>
+            </div>
+
+            <!--Mining Button-->
+            <div class="mButton" id="mButton">
+                <button class="inv" id="inv"></button>
+                <button class="mining" id="miningB"></button>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+
+</html>
