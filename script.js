@@ -133,6 +133,8 @@ let pickLvl = 1;
 let goggle = [];
 let gogLvl = 0;
 
+/*Help Function*/
+const help = document.querySelector("#help")
 
 /*Locations*/
 const locations = [{
@@ -194,6 +196,7 @@ function displays() {
     text.style.display = "inline";
     txtb.style.display = "inline";
     MB.style.display = "none";
+            help.style.display = "none"
     popButton();
     campfire()
 }
